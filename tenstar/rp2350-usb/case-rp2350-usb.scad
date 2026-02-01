@@ -71,8 +71,7 @@ translate([20,-28,0])
 caseFeet2();
 translate([-12,-25,0])
 casecap();  
-translate([-12,-31,0])
-casecap();  
+
   
 /*************************************************
  * Modules                                       *
