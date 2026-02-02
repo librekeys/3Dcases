@@ -6,7 +6,7 @@
 // Board width
 board_w = 18.2; 
 // Board length
-board_l = 25.7; 
+board_l = 25.8; 
 // PCB thickness
 board_h = 2.2; 
 // Bottom components max thickness
@@ -176,7 +176,7 @@ module caseBottom() {
         translate([0, board_l/2 + thickness/2, 0])
             usbPort();
         // case hole
-        translate([0,-board_l/2 - thickness3 - 3, 3-board_h/2-board_c_b - tolerance_z-thickness2])     
+        translate([0,-board_l/2 - thickness3 - 4, 3-board_h/2-board_c_b - tolerance_z-thickness2])
         union() {
             cylinder(h=10, r=2.5, center=true, $fn=32);    
             translate([0, 0, -5])     
@@ -222,7 +222,7 @@ module caseTop() {
                 (board_h/2 + board_c_t + tolerance_z + thickness2/2) ])
                 cube([2*button_x - board_s+1 , 0.75, 2*thickness2], center=true);
             // case hole
-            translate([0,-board_l/2 - thickness3 - 3,(-8 + board_h/2 +board_c_t+thickness2+button_t+tolerance_z)])     
+            translate([0,-board_l/2 - thickness3 - 4,(-8 + board_h/2 +board_c_t+thickness2+button_t+tolerance_z)])
             union() {
                 cylinder(h=10, r=2.5, center=false, $fn=32);    
                 translate([0, 0, 5])     

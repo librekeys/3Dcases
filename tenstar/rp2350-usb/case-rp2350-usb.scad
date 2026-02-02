@@ -176,7 +176,7 @@ module caseBottom() {
         translate([0, board_l/2 + thickness/2, 0])
             usbPort();
         // case hole
-        translate([0,-(board_l + 2*thickness3)/2 - 1.75, 3-board_h/2-board_c_b - tolerance_z-thickness2])     
+        translate([0,-(board_l + 2*thickness3)/2 - 2.5, 3-board_h/2-board_c_b - tolerance_z-thickness2])
         union() {
             cylinder(h=10, r=2.5, center=true, $fn=32);    
             translate([0, 0, -5])     
@@ -222,7 +222,7 @@ module caseTop() {
                 (board_h/2 + board_c_t + tolerance_z + thickness2/2) ])
                 cube([2*button_x - board_s+3-.5 , 0.75, 2*thickness2], center=true);
             // case hole
-            translate([0,-( board_l + 2*thickness3)/2 - 1.75,(-8 + board_h/2 +board_c_t+thickness2+button_t+tolerance_z)])     
+            translate([0,-( board_l + 2*thickness3)/2 - 2.5,(-8 + board_h/2 +board_c_t+thickness2+button_t+tolerance_z)])
             union() {
                 cylinder(h=10, r=2.5, center=false, $fn=32);    
                 translate([0, 0, 5])     
